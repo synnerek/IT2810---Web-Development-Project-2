@@ -1,0 +1,169 @@
+html, body {
+  margin: 0;
+}
+
+.app {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+  
+  .login-container {
+    width: 400px;
+    padding-bottom: 500px;
+  }
+  
+  .form {
+    display: flex;
+    border: 1px solid #ddd;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+
+  .dark-mode{
+    background-color: gray;
+    height: 100%
+  }
+  
+  input {
+    margin: 15px 0;
+    padding: 10px;
+  }
+ 
+  .listOfCommits {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 1rem;
+    width: 60%;
+    height: 670px;
+    overflow: scroll;
+    justify-content: center;
+  }
+
+  .commitsBox {
+    background-color: rgba(196, 193, 193, 0.449);
+    border-radius: 0.25rem;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 10px;
+    border: 1px solid var(--color-gray);
+    border-radius: 8px;
+    height: auto;
+    width: 270px;
+  }
+
+  .doughnutChartBox {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+
+  .btn, button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin: 0.5rem 1rem 0.5rem 0;
+    font-size: 0.8rem
+  }
+
+  .headerButtons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  .headerBackgroundDark {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #0000;
+  }
+
+  .headerBackgroundLight {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #333;
+  }
+
+  .authorButtons {
+    background-color: black;
+    transition-duration: 0.1s;
+  }
+
+  .authorButtons:hover {
+    background-color: rgba(0, 0, 0, 0.735);
+  }
+
+  .projectTitle {
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .bothBoxes {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  @media all and (orientation: portrait) {
+    .bothBoxes {
+      display: inline;
+    }
+    .listOfCommits {
+      width: 100%;
+      height: 700px;
+    }
+
+    .doughnutChartBox {
+      width: 100%;
+    }
+
+    .btn, button {
+      height: 10%;
+      width: 70%;
+    }
+
+  }
+
+  @media all and (orientation: landscape) and (max-width: 1000px) {
+    .commitsBox {
+      width: 90%;
+    }
+
+    .listOfCommits {
+      width: 70%;
+      height: 470px;
+    }
+
+  }
+
+  @media all and (orientation: landscape) and (max-width: 400) {
+    .commitsBox {
+      width: 90%;
+    }
+
+    .listOfCommits {
+      width: 70%;
+      height: 200px;
+    }
+  }

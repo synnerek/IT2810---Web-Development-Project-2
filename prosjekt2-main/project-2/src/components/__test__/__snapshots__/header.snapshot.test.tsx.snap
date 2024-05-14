@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="commitsBox"
+>
+  <p
+    className="text-xl"
+  />
+  <p>
+    Author: 
+  </p>
+  <p>
+    Comitted at: 
+  </p>
+</div>
+`;
